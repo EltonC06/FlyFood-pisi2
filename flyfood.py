@@ -92,11 +92,11 @@ def achar_menor_rota(pontos, inicio='R'):
 if __name__ == "__main__":
     tempo_inicio = time.time()
 
-    pontos = ler_matriz('cenario3.txt')
+    pontos = ler_matriz('cenario1.txt')
     if pontos:
         rota, dist = achar_menor_rota(pontos)
         if rota:
-            print(f"\nMelhor Rota Encontrada: {' -> '.join(rota)}")
+            print(f"\nMelhor Rota Encontrada: R -> {' -> '.join(rota)} -> R")
             print(f"Distância Total: {dist}")
         else:
             print("Não há pontos de entrega para traçar uma rota.")
